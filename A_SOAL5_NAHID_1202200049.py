@@ -1,0 +1,24 @@
+print("""===  VOTING ===""")
+print("""
+1. Voting
+2. Database
+0. Exit
+""")
+voting = []
+database=[]
+while True:
+    pilihan = int(input("Masukkan pilihan Anda : "))
+    if pilihan == 1:
+        nama=input("Masukkan Nama Anda: ")
+        database.append(nama)
+        print("""=== VOTING ===""")
+        print(" 1.XAX\n 2.ADV\n 3.NOP\n 4.HAS \n 5.IAN  ")
+        pil= int(input("Masukkan pilihan Anda (1/2/3/4/5) : "))
+        voting.append(pil)
+    elif pilihan == 2:
+        token = input("Masukkan Token : ")
+        if token=="d4aaa":
+            print(database,"memilih",voting)
+    else:
+        break
+   
