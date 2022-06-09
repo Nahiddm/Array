@@ -1,0 +1,10 @@
+print("Porsi Terbanyak".center(50))
+status=True
+porsi=[]
+while True:
+    porsi_jual =input("Masukan Jumlah porsi (Stop untuk berhenti) : ")
+    porsi.append(porsi_jual)
+    if porsi_jual == "stop":
+        porsi.remove("stop")
+        print("Penjualan terbanyak dari satu pelanggan hari ini adalah :",max(porsi))
+        break
