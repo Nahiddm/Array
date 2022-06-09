@@ -1,0 +1,6 @@
+angkabulat=[]
+a=int(input("Masukan Jumlah Angka: "))
+for i in range(a):
+    angkabulat.append(input("Masukan Angka ke"+str(i+1)+":"))
+angkabulat=list(dict.fromkeys(angkabulat))
+print(angkabulat)
